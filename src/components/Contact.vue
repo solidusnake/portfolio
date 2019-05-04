@@ -5,7 +5,7 @@
         <h1>{{ title }}</h1>
         <p>{{ message }}</p>
         </div>
- <!-- </div>-->
+<!-- </div>-->
 </template>
 
 <script>

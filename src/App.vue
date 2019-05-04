@@ -1,12 +1,19 @@
+
+
+
+
+
+
 <template>
   <div id="app">
     <div id="nav">
       <router-link to="/">SOFIANE LAKHNECHE</router-link>
-      <router-link to="/about">PROJETS</router-link>
-      <router-link to="/about">CV</router-link>
+      <router-link to="/projets">PROJETS</router-link>
+      <router-link to="/cv">CV</router-link>
       <router-link to="/about">CONTACT</router-link>
     </div>
     <router-view />
+
   </div>
 </template>
 
@@ -53,4 +60,16 @@ h1 {
 p {
   font-family: "Chivo";
 }
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+    body {
+      background-color: red;
+    }
+    .home {
+  margin: 0 auto;
+  width: 500px;
+    }
+    }
 </style>

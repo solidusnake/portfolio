@@ -4,7 +4,7 @@
       <div class="footer__page">
         <p>{{ name }}</p>
         </div>
- <!-- </div>-->
+<!-- </div>-->
 </template>
 
 <script>

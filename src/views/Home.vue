@@ -1,11 +1,15 @@
+
+
 <template>
   <div class="home">
     <!--   <img alt="Vue logo" src="../assets/logo.png" /> 
-   <HelloWorld name="Welcome to Your Vue.js App" /> -->
+<HelloWorld name="Welcome to Your Vue.js App" /> -->
           
         <Intro
     />
-    <div class="card__container">  
+    <div class="card__container"       type="button"
+      @click="showModal" >
+      
     <Card
       name="IREALITY"
       bgColor="#87baD7"
@@ -43,6 +47,18 @@ et j'ai de l'intérêt pour UNITY 3D
     <Footer
       name="© Sofiane Lakhneche 2017"
     />
+            <button
+      type="button"
+      class="btn"
+      @click="showModal"
+    >
+      Open Modal!
+    </button>
+
+    <modal
+      v-show="isModalVisible"
+      @close="closeModal"
+    />
     </div>
   </div>
 </template>
@@ -55,6 +71,9 @@ import Card from "@/components/Card.vue";
 import Skill from "@/components/Skill.vue";
 import Contact from "@/components/Contact.vue";
 import Footer from "@/components/Footer.vue";
+import modal from '@/components/PopIn.vue';
+//import PopIn from "@/components/PopIn.vue";
+
 
 
 export default {
@@ -66,7 +85,22 @@ export default {
     Intro,
     Contact,
     Footer,
-  }
+    //popin de type modal
+    modal,
+  },
+      data () {
+      return {
+        isModalVisible: false,
+      };
+    },
+    methods: {
+      showModal() {
+        this.isModalVisible = true;
+      },
+      closeModal() {
+        this.isModalVisible = false;
+      }
+    },
 };
 </script>
 
