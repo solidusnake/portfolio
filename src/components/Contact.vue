@@ -3,7 +3,9 @@
     <!--<h1>{{ msg }}</h1>-->
       <div class="project__skill">
         <h1>{{ title }}</h1>
-        <p>{{ message }}</p>
+        <p>— — Vous pouvez m’envoyer un message<br> à <span class="cv"><a href="mailto:lakhneche.sofiane@gmail.com">lakhneche.sofiane@gmail.com</a></span> Ou me retrouver par ici →</p>
+            <ul class="icons"><a href="http://github.com/solidusnake/" class="fa fa-github"></a> <a href="mailto:lakhneche.sofiane@gmail.com" class="fa fa-envelope"></a></ul>
+        
         </div>
 <!-- </div>-->
 </template>

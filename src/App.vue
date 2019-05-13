@@ -7,7 +7,7 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">SOFIANE LAKHNECHE</router-link>
+      <router-link to="/" style="padding-right: 270px;">SOFIANE LAKHNECHE</router-link>
       <router-link to="/projets">PROJETS</router-link>
       <router-link to="/cv">CV</router-link>
       <router-link to="/about">CONTACT</router-link>

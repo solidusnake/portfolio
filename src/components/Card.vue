@@ -8,7 +8,7 @@
     <!--<h1>{{ msg }}</h1>-->
     <transition name="fade">
 
-      <div v-if="show" class="project__item project__item--lightblue"  style="visibility: visible;" v-bind:style="{ backgroundColor: bgColor}">
+      <div v-if="show" @click="onClick" class="project__item project__item--lightblue"  style="visibility: visible;" v-bind:style="{ backgroundColor: bgcolor}">
         <img class="project__cover" v-bind:style="{ backgroundImage: `url(${backgroundImage})`}">
         <div class="project__content">
           <p class="project__tags">
@@ -37,10 +37,17 @@ export default {
       show: true,
     }
   },
+  methods: {
+    onClick() {
+      console.log('toz', this.name, this.bgcolor);
+      this.showModal(this.name, this.bgcolor);
+    }
+  },
   props: {
     name: String,
-    bgColor: String,
+    bgcolor: String,
     backgroundImage: String,
+    showModal: Function
   }
 };
 </script>

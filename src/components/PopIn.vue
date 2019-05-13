@@ -1,6 +1,10 @@
 <script>
   export default {
     name: 'modal',
+    props: {
+      modalname: String,
+      color: String
+    },
     methods: {
       close() {
         this.$emit('close');
@@ -15,14 +19,15 @@
         role="dialog"
         aria-labelledby="modalTitle"
         aria-describedby="modalDescription"
+      
       >
         <header
           class="modal-header"
           id="modalTitle"
         >
           <slot name="header">
-            This is the default tile!
-
+            {{ modalname }}
+            
             <button
               type="button"
               class="btn-close"
@@ -38,12 +43,12 @@
           id="modalDescription"
         >
           <slot name="body">
-            I'm the default body!
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </slot>
         </section>
         <footer class="modal-footer">
           <slot name="footer">
-            I'm the default footer!
+            footer
 
             <button
               type="button"
@@ -67,12 +72,12 @@
     left: 0;
     right: 0;
     background-color: #111629;
-    display: flex;
+    /*display: flex;*/
     justify-content: center;
     align-items: center;
   }
   .modal {
-    background: rgb(135, 186, 215);
+    /*background: rgb(135, 186, 215);*/
     /*box-shadow: 2px 2px 20px 1px;*/
     overflow-x: auto;
     /*display: flex;
@@ -81,12 +86,15 @@
     height: 600px;
     font-family: "Chivo";
     font-size: 130%;
+
   }
+
   .modal-header,
   .modal-footer {
     padding: 15px;
     display: flex;
   }
+
   .modal-header {
     border-bottom: 1px solid #eeeeee;
     color: rgb(235, 247, 245);
