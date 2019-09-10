@@ -4,6 +4,8 @@
       <div class="project__skill">
         <h1>COMPETENCES</h1>
         <p>{{ name }}</p>
+        <router-link to="/cv">fefefef</router-link>
+  
         </div>
 <!-- </div>-->
 </template>

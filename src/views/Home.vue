@@ -18,11 +18,9 @@
         bgcolor="#f16c67"
         :backgroundImage="require('../assets/projet_2.png')"
       />
-
       <Skill
         name="— En programmation, je maîtrise HTML5, CSS3, JQuery, JSP,  ANGULARJS Je connais aussi le C#, JAVA, PHP, 
-et j'ai de l'intérêt pour UNITY 3D
-→ Voir mon CV complet"
+et j'ai de l'intérêt pour UNITY 3D → Voir mon CV complet"
       />
       <hr>
       <Card

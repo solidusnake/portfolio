@@ -1,31 +1,42 @@
 <template>
   <div class="hello">
-  <!--  <div id="demo">
+    <!--  <div id="demo">
       <button v-on:click="show = !show">
         Permuter
       </button>
     </div> -->
     <!--<h1>{{ msg }}</h1>-->
     <transition name="fade">
-
-      <div v-if="show" @click="onClick" class="project__item project__item--lightblue"  style="visibility: visible;" v-bind:style="{ backgroundColor: bgcolor}">
-        <img class="project__cover" v-bind:style="{ backgroundImage: `url(${backgroundImage})`}">
+      <div
+        v-if="show"
+        @click="onClick"
+        class="project__item project__item--lightblue"
+        style="visibility: visible;"
+        v-bind:style="{ backgroundColor: bgcolor }"
+      >
+        <img
+          class="project__cover"
+          v-bind:style="{ backgroundImage: `url(${backgroundImage})` }"
+        />
         <div class="project__content">
           <p class="project__tags">
-            Stage   .   Application  .  Vidéos  .  RA
+            Stage . Application . Vidéos . RA
           </p>
           <h3 class="project__title">{{ name }}</h3>
           <p class="project__summary">
-            — Application de réalité augmentée pour la presse développée lors de mon stage universitaire.
-            <br>
-            <a href="https://sofianelakhneche.000webhostapp.com/images/ireality.mp4"
-            target="_blank">
-              Voir la vidéo de présentation</a>
+            — Application de réalité augmentée pour la presse développée lors de
+            mon stage universitaire.
+            <br />
+            <a
+              href="https://sofianelakhneche.000webhostapp.com/images/ireality.mp4"
+              target="_blank"
+            >
+              Voir la vidéo de présentation</a
+            >
           </p>
         </div>
       </div>
     </transition>
-
   </div>
 </template>
 
@@ -34,12 +45,12 @@ export default {
   name: "Card",
   data() {
     return {
-      show: true,
-    }
+      show: true
+    };
   },
   methods: {
     onClick() {
-      console.log('toz', this.name, this.bgcolor);
+      console.log("toz", this.name, this.bgcolor);
       this.showModal(this.name, this.bgcolor);
     }
   },
@@ -51,7 +62,6 @@ export default {
   }
 };
 </script>
-
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
@@ -81,8 +91,9 @@ export default {
   background-color: #f16c67;
   margin-top: 150px;
 }
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s;
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
@@ -95,6 +106,5 @@ h3 {
   font-size: 300%;
 }
 .project__summary {
-  
 }
 </style>

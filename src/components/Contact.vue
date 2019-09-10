@@ -38,5 +38,9 @@ h1 {
   font-family: "PathwayGothicOne";
   font-size: 400%;
 }
+a {
+	color: #feea72;
+  text-decoration: none;
+}
 
 </style>
