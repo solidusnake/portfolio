@@ -4,7 +4,7 @@
       <button v-on:click="show = !show">
         Permuter
       </button>
-    </div> -->
+    </div>-->
     <!--<h1>{{ msg }}</h1>-->
     <transition name="fade">
       <div
@@ -14,25 +14,17 @@
         style="visibility: visible;"
         v-bind:style="{ backgroundColor: bgcolor }"
       >
-        <img
-          class="project__cover"
-          v-bind:style="{ backgroundImage: `url(${backgroundImage})` }"
-        />
+        <img class="project__cover" v-bind:style="{ backgroundImage: `url(${backgroundImage})` }" />
         <div class="project__content">
-          <p class="project__tags">
-            Stage . Application . Vidéos . RA
-          </p>
+          <p class="project__tags">Stage . Application . Vidéos . RA</p>
           <h3 class="project__title">{{ name }}</h3>
           <p class="project__summary">
-            — Application de réalité augmentée pour la presse développée lors de
-            mon stage universitaire.
+            {{ summary }}
             <br />
             <a
               href="https://sofianelakhneche.000webhostapp.com/images/ireality.mp4"
               target="_blank"
-            >
-              Voir la vidéo de présentation</a
-            >
+            >Voir la vidéo de présentation</a>
           </p>
         </div>
       </div>
@@ -66,12 +58,12 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .project__item {
-  width: 485px;
-  height: 777px;
+  width: 438px;
+  height: 700px;
 }
 .project__item .project__cover {
-  width: 485px;
-  height: 360px;
+  width: 438px;
+  height: 324px;
   display: inline-block;
   background-size: 100%;
   background-repeat: no-repeat;

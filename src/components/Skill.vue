@@ -1,20 +1,19 @@
 <template>
   <!--<div class="hello">-->
-    <!--<h1>{{ msg }}</h1>-->
-      <div class="project__skill">
-        <h1>COMPETENCES</h1>
-        <p>{{ name }}</p>
-        <router-link to="/cv">fefefef</router-link>
-  
-        </div>
-<!-- </div>-->
+  <!--<h1>{{ msg }}</h1>-->
+  <div class="project__skill">
+    <h1>COMPETENCES</h1>
+    <p>{{ name }}</p>
+    <router-link to="/cv">fefefef</router-link>
+  </div>
+  <!-- </div>-->
 </template>
 
 <script>
 export default {
   name: "Skill",
   props: {
-    name: String,
+    name: String
   }
 };
 </script>
@@ -34,5 +33,4 @@ h1 {
   font-family: "PathwayGothicOne";
   font-size: 400%;
 }
-
 </style>

@@ -24,15 +24,12 @@ export default {
         <header class="modal-header" id="modalTitle">
           <slot name="header">
             {{ modalname }}
-
             <button
               type="button"
               class="btn-close"
               @click="close"
               aria-label="Close modal"
-            >
-              x
-            </button>
+            >x</button>
           </slot>
         </header>
         <section class="modal-body" id="modalDescription">
@@ -49,15 +46,12 @@ export default {
         <footer class="modal-footer">
           <slot name="footer">
             footer
-
             <button
               type="button"
               class="btn-green"
               @click="close"
               aria-label="Close modal"
-            >
-              Close me!
-            </button>
+            >Close me!</button>
           </slot>
         </footer>
       </div>

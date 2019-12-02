@@ -61,6 +61,11 @@
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
+            <li>VueJs</li>
+            <li>ReactNative</li>
+            <li>Cordova</li>
+            <li>Angular 1</li>
+            <li>Ionic</li>
           </ul>
         </h4>
       </div>

@@ -1,17 +1,15 @@
 <template>
   <div class="home">
-    <!--   <img alt="Vue logo" src="../assets/logo.png" /> 
-    <HelloWorld name="Welcome to Your Vue.js App" />-->
-
-    <Intro/>
+    <Intro />
     <div class="card__container">
       <Card
         name="IREALITY"
+        summary="rfeerfgegg"
         :showModal="showModal"
         bgcolor="#87baD7"
         :backgroundImage="require('../assets/projet_1.png')"
       />
-      <hr>
+      <hr />
       <Card
         name="PROJET NUANCE"
         :showModal="showModal"
@@ -22,7 +20,7 @@
         name="— En programmation, je maîtrise HTML5, CSS3, JQuery, JSP,  ANGULARJS Je connais aussi le C#, JAVA, PHP, 
 et j'ai de l'intérêt pour UNITY 3D → Voir mon CV complet"
       />
-      <hr>
+      <hr />
       <Card
         :showModal="showModal"
         name="SONIC"
@@ -35,16 +33,21 @@ et j'ai de l'intérêt pour UNITY 3D → Voir mon CV complet"
         bgcolor="#87BAD7"
         :backgroundImage="require('../assets/projet_4.png')"
       />
-      <hr>
+      <hr />
       <Contact
         title="CONTACT"
         message="— Vous pouvez m’envoyer un message 
 à lakhneche.sofiane@gmail.com Ou me retrouver par ici "
       />
-      <Footer name="© Sofiane Lakhneche 2017"/>
+      <Footer name="© Sofiane Lakhneche 2019" />
       <button type="button" class="btn" @click="showModal">Open Modal!</button>
     </div>
-    <modal :modalname="modalName" v-show="isModalVisible" @close="closeModal" v-bind:style="{ backgroundColor: color}"/>
+    <modal
+      :modalname="modalName"
+      v-show="isModalVisible"
+      @close="closeModal"
+      v-bind:style="{ backgroundColor: color}"
+    />
   </div>
 </template>
 
@@ -80,7 +83,7 @@ export default {
     };
   },
   methods: {
-    showModal(modalName,color) {
+    showModal(modalName, color) {
       this.modalName = modalName;
       this.color = color;
       this.isModalVisible = true;
@@ -105,7 +108,6 @@ export default {
   width: 86%;
 }
 @media (min-width: 820px) {
-  
   .home {
     /*width: 40%;*/
   }
